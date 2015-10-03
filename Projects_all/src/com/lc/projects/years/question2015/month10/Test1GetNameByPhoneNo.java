@@ -11,7 +11,7 @@ import java.util.Map;
  * @author LC
  *
  */
-public class GetNameByPhoneNo {
+public class Test1GetNameByPhoneNo {
 	public static void main(String[] args) {
 		Map<String, List<String>> allMap = new HashMap<String, List<String>>();
 		
