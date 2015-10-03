@@ -1,4 +1,4 @@
-package com.lc.projects.problems.phonename;
+package com.lc.projects.years.question2015.month10;
 
 import java.util.ArrayList;
 import java.util.HashMap;
