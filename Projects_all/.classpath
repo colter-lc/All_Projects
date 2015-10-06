@@ -12,5 +12,8 @@
 	<classpathentry kind="lib" path="lib/http/httpmime-4.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/http/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/http/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="lib/redis/commons-pool-1.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/redis/jedis-2.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
