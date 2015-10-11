@@ -30,40 +30,40 @@ public class Test {
 			IOException, KeyManagementException, NoSuchAlgorithmException,
 			KeyStoreException {
 
-		SSLContext sslContext = new SSLContextBuilder().loadTrustMaterial(null,
-				new TrustStrategy() {
-					@Override
-					public boolean isTrusted(
-							java.security.cert.X509Certificate[] arg0,
-							String arg1)
-							throws java.security.cert.CertificateException {
-						return true;
-					}
+//		SSLContext sslContext = new SSLContextBuilder().loadTrustMaterial(null,
+//				new TrustStrategy() {
+//					@Override
+//					public boolean isTrusted(
+//							java.security.cert.X509Certificate[] arg0,
+//							String arg1)
+//							throws java.security.cert.CertificateException {
+//						return true;
+//					}
+//
+//				}).build();
+//
+//		SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(
+//				sslContext, new HostnameVerifier() {
+//
+//					@Override
+//					public boolean verify(String hostname, SSLSession session) {
+//						// TODO Auto-generated method stub
+//						return true;
+//					}
+//				});
 
-				}).build();
-
-		SSLConnectionSocketFactory sslsf = new SSLConnectionSocketFactory(
-				sslContext, new HostnameVerifier() {
-
-					@Override
-					public boolean verify(String hostname, SSLSession session) {
-						// TODO Auto-generated method stub
-						return true;
-					}
-				});
-
-		HttpClient client = HttpClients.custom().setSSLSocketFactory(sslsf)
-				.build();
-		// String url =
-		// "https://192.168.0.100:8088/Project_web_all/LoginServlet";
-		String url = "https://www.baidu.com";
-		// CloseableHttpClient client = HttpClients.createDefault();
-		HttpGet get = new HttpGet(url);
-		HttpResponse response = client.execute(get);
-		HttpEntity entity = response.getEntity();
-		System.out.println(entity);
-		System.out.println(entity.getContent());
-		System.out.println(EntityUtils.toString(entity));
+//		HttpClient client = HttpClients.custom().setSSLSocketFactory(sslsf)
+//				.build();
+//		// String url =
+//		// "https://192.168.0.100:8088/Project_web_all/LoginServlet";
+//		String url = "https://www.baidu.com";
+//		// CloseableHttpClient client = HttpClients.createDefault();
+//		HttpGet get = new HttpGet(url);
+//		HttpResponse response = client.execute(get);
+//		HttpEntity entity = response.getEntity();
+//		System.out.println(entity);
+//		System.out.println(entity.getContent());
+//		System.out.println(EntityUtils.toString(entity));
 
 	}
 }
